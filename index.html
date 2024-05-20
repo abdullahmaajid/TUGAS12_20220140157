@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>177 DOM Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h4>Registration Details</h4>
+                <p id="modalText">Details will appear here...</p>
+            </div>
+        </div>
+        
+        <div class="header">
+            <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form id="registrationForm">
+            <label for="nama">Nama</label><br>
+            <input type="text" placeholder="Masukkan Nama Anda" id="nama"><br><br>
+            
+            <label for="nim">NIM</label><br>
+            <input type="text" placeholder="Masukkan NIM Anda" id="nim"><br><br>
+            
+            <p>Bidang Peminatan : </p>
+            
+            <input type="radio" name="peminatan" id="Programing" value="Programing">
+            <label for="Programing">Pemrograman</label><br>
+            
+            <input type="radio" name="peminatan" id="Jaringan" value="Jaringan">
+            <label for="Jaringan">Jaringan</label><br>
+            
+            <input type="radio" name="peminatan" id="Data" value="Data">
+            <label for="Data">Data</label><br>
+            
+            <input type="radio" name="peminatan" id="Design" value="Design">
+            <label for="Design">Design</label><br>
+            
+            <label for="alamat">Alamat</label><br>
+            <textarea name="alamat" id="alamat" cols="30" rows="3" placeholder="Masukkan alamat lengkap mu"></textarea><br><br>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
